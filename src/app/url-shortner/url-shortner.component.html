@@ -1,0 +1,26 @@
+<div class="mainWrapper">
+  <div class="FirstPart">
+    <div class="backGround">
+      <div class="headertext">
+        <h1>Url Shortner</h1>
+      </div>
+      <div class="urlInput">
+        <mat-form-field appearance="outline">
+          <mat-label>Add Url</mat-label>
+          <input matInput [(ngModel)]="url" />
+        </mat-form-field>
+        <div>
+          <button mat-flat-button color="warn" (click)="submit()">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="SecondPart">
+    <div>
+      <mat-spinner *ngIf="showSpinner"></mat-spinner>
+    </div>
+    <div class="urlShow" *ngIf="hideUrl">
+      <a class="openUrl" (click)="openUrl()">{{ newUrl }}</a>
+    </div>
+  </div>
+</div>

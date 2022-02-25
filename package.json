@@ -1,9 +1,6 @@
 {
   "name": "url-shortner",
   "version": "0.0.0",
-  "engines": {
-    "node": "14.17.3"
-  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
